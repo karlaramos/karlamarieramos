@@ -1,0 +1,437 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.thephotoargus.com/wp-content/uploads/2016/04/BW9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span{
+  color: #f9004d;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px  25px;
+  
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+nav ul li a:hover{
+  color: #f9004d;
+  transition: .4s;
+}
+.btn{
+  background-color:#f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s; 
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.content{
+  position: absolute;
+padding-top: 50px;
+  top: 50%;
+  left:8%;
+  transform: translateY(-50%);
+}
+h1{
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+h3{
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4{
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #f9004d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #807c7c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #f9004;}
+.about{
+  height: 115vh;
+  background-image: url(https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/316712833_1525220747888924_8193511500323939520_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHNz5KzsYY2iM1PjmL5qGzZrVmA8cCqMUmtWYDxwKoxSfePHEru_3zb9kzWl70d1Gt-y_rSUKhZCwOiolRapTJ1&_nc_ohc=lGWS588zox4AX8c2D6v&_nc_ht=scontent.fmnl4-1.fna&oh=03_AdSXt4BZx4wQekzxcepXQl3iCe4tR6__UCko0t-0O5IR9Q&oe=63AE5C2D);
+  background-size: cover;
+  background-position: center;  
+  width: 100%;
+  padding: 100px;
+}
+.about img{
+  height: 150;
+  width: 250px;
+  border-radius: 75px;
+}
+.about-text{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2{
+  color:white;
+  font-size: 70px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.about-text p{
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+button{
+  background-color:#f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s; 
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+.service{
+  height: 115vh;
+  background-image: url(https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/316712833_1525220747888924_8193511500323939520_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHNz5KzsYY2iM1PjmL5qGzZrVmA8cCqMUmtWYDxwKoxSfePHEru_3zb9kzWl70d1Gt-y_rSUKhZCwOiolRapTJ1&_nc_ohc=lGWS588zox4AX8c2D6v&_nc_ht=scontent.fmnl4-1.fna&oh=03_AdSXt4BZx4wQekzxcepXQl3iCe4tR6__UCko0t-0O5IR9Q&oe=63AE5C2D);
+  background-size: cover;
+  background-position: center;  
+  width: 100%;
+  padding: 100px;
+}
+
+.service img{
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+ 
+}
+
+.title h2{
+  color: white;
+  font-size: 65px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+  }
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card{
+  height: 450px;
+  width: 335px;
+  padding: 10px 10px;
+  padding-top: 5px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.pra p{
+  color: grey;
+  text-align: center;
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 25px;
+}
+.card .button{
+  background-color:#f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s; 
+}
+.card .button:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+*contact {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #f9004d;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s
+}
+
+input[type=submit]:hover {
+
+background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+  
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 0px;
+  background-color: #333030;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: right;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #2b2a2a;
+}
+.container{
+    display: flex;
+    padding: 100px;
+}
+.container .section{
+    flex-basis: 100%;
+    padding: 25px;
+}
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.section .content{
+    margin:5px 0 0 0;
+    position: relative;
+}
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #dd5f24;
+    top: -10px;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 5px;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+.left .content .social a span:hover{
+    background: #dd5f24;
+}
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+.center .content .fas:hover{
+    background: #dd5f24;
+    border:1px solid #dd5f24;
+}
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone{
+    margin: 15px 0;
+}
+.footer-bottom center{
+    padding: 10px;
+    font-size: 0.9375rem;
+    background: transparent;
+}
+
+.footer-bottom center span{
+    color: #656565;
+}
+
+.footer-bottom center a{
+    text-decoration: none;
+}
+
+.footer-bottom center a:hover{
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+@media screen and (max-width:700px){
+    footer{
+        position: relative;
+        bottom: 0px;
+        
+    }
+
+    .left .content{
+        padding-right:0px;
+        padding-bottom: 30px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:0.5rem;
+    }
+
+    .container .section{
+        margin:5px 0;
+    }
+}
+.end{
+  position: absolute;
+  color:#f9004d;
+  bottom: 35px;
+  font-size: 14px; 
+}
